@@ -16,6 +16,8 @@ wat(['a', 'hello']) # print e and hello,
 it supports assignment with `<-`
 
 ```python
+from muu import muu
+
 @muu
 def ok(x):
 	return map(lam(e)[
