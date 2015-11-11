@@ -39,7 +39,6 @@ def muu(function):
                     in_lam = 'exprs'
             elif in_lam == 'exprs':
                 if isinstance(opcode, int):
-                    # print(opcode, value)
                     length += stack_effect(opcode,
                                            value if isinstance(value, int) else 0)
 
@@ -103,7 +102,6 @@ def muu(function):
                     closure = True
                     exprs.code.append((LOAD_DEREF, value))
                     derefs.add(value)
-                # and value in derefs:
                 elif opcode in [LOAD_NAME, LOAD_FAST, LOAD_GLOBAL]:
                     if value in derefs:
                         exprs.code.append((LOAD_DEREF, value))
