@@ -13,7 +13,9 @@ wat(['a', 'hello']) # print e and hello,
 # [1, 5]
 ```
 
-it supports assignment with `<-`
+it supports assignment with `<-`, because there was no way to do it with `=`
+(`lam(e)(x, e = x)` syntax was considered, but it wouldn't work for `lam()(e=2, e)` cases)
+
 
 ```python
 from muu import muu
@@ -21,7 +23,7 @@ from muu import muu
 @muu
 def ok(x):
 	return map(lam(e)[
-		x['name'] <~ "ha",
+		x['name'] <- "ha",
 		x], x)
 
 ok([{'name': 2}]) # [{'name': 'ha'}]
