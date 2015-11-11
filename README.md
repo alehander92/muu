@@ -34,6 +34,12 @@ bytecode for an equivalent lambda (the limitation for one expression is only on 
 
 dark magic, a horrible hack, but really a lot of fun
 
+## install
+
+```
+pip install muu
+```
+
 ## thanks
 
 uses a forked and patched version of byteplay. Credits to [https://wiki.python.org/moin/ByteplayDoc](https://wiki.python.org/moin/ByteplayDoc) and [https://github.com/serprex/byteplay](https://github.com/serprex/byteplay)
